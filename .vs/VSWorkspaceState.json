@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BulkyBookWeb"
+    "\\BulkyBookWeb",
+    "\\BulkyBookWeb\\wwwroot",
+    "\\BulkyBookWeb\\wwwroot\\css"
   ],
-  "SelectedNode": "\\BulkyBookWeb.sln",
+  "SelectedNode": "\\BulkyBookWeb\\wwwroot\\css\\bootswatchTheme.css",
   "PreviewInSolutionExplorer": false
 }
