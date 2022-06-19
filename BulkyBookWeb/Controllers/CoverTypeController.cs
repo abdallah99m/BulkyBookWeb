@@ -6,14 +6,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BulkyBookWeb.Controllers
 {
-    public class CategoryController : Controller
+    public class CoverTypeController : Controller
     {
         private IUnitOfWork _unitOfWork;
-        public CategoryController(IUnitOfWork unitOfWork)
+        public CoverTypeController(IUnitOfWork unitOfWork)
         { _unitOfWork = unitOfWork; }
         public IActionResult Index()
         {
-            IEnumerable<Category> objCategoryList= _unitOfWork.category.GetAll();
+            IEnumerable<CoverType> objCategoryList= _unitOfWork.coverType.GetAll();
             return View(objCategoryList);
         }
         //Get
@@ -24,17 +24,13 @@ namespace BulkyBookWeb.Controllers
         //post
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Category obj)
-        {   if(obj.Name ==obj.DisplayOrder.ToString())
-            {
-                ModelState.AddModelError("CustomError", "the DisplayOrder cannot exactly match the Nmae.");
-
-            }
+        public IActionResult Create(CoverType obj)
+        {   
             if (ModelState.IsValid)
             {
-                _unitOfWork.category.Add(obj);
+                _unitOfWork.coverType.Add(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "Category created successfully";
+                TempData["success"] = "Cover Type created successfully";
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -47,27 +43,23 @@ namespace BulkyBookWeb.Controllers
                 return NotFound();
             }
             //var categoryFromDb = _db.categories.Find(id);
-            var category = _unitOfWork.category.GetFirstOrDefault(c => c.Id == id);
-            if(category == null)
+            var coverType = _unitOfWork.coverType.GetFirstOrDefault(c => c.Id == id);
+            if(coverType == null)
             { return NotFound(); }
             
-            return View(category);
+            return View(coverType);
         }
         //post
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Category obj)
+        public IActionResult Edit(CoverType obj)
         {
-            if (obj.Name == obj.DisplayOrder.ToString())
-            {
-                ModelState.AddModelError("CustomError", "the DisplayOrder cannot exactly match the Nmae.");
-
-            }
+            
             if (ModelState.IsValid)
             {
-                _unitOfWork.category.update(obj);
+                _unitOfWork.coverType.update(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "Category update successfully";
+                TempData["success"] = "Cover Type update successfully";
 
                 return RedirectToAction("Index");
             }
@@ -80,25 +72,25 @@ namespace BulkyBookWeb.Controllers
             {
                 return NotFound();
             }
-            var categoryFromDb = _unitOfWork.category.GetFirstOrDefault(c => c.Id == id);
-            if (categoryFromDb == null)
+            var covertypeFromDb = _unitOfWork.coverType.GetFirstOrDefault(c => c.Id == id);
+            if (covertypeFromDb == null)
             { return NotFound(); }
 
-            return View(categoryFromDb);
+            return View(covertypeFromDb);
         }
         //post
         [HttpPost,ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public IActionResult DeletePost(int ?id)
-        {var obj = _unitOfWork.category.GetFirstOrDefault(c => c.Id == id);
+        {var obj = _unitOfWork.coverType.GetFirstOrDefault(c => c.Id == id);
             if (obj == null)
             { return NotFound();
             }
 
 
-            _unitOfWork.category.Remove(obj);
+            _unitOfWork.coverType.Remove(obj);
             _unitOfWork.Save();
-            TempData["success"] = "Category Delete successfully";
+            TempData["success"] = "Cover Type Delete successfully";
 
             return RedirectToAction("Index");
             

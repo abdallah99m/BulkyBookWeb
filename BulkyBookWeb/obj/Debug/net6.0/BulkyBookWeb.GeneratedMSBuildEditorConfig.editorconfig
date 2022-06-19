@@ -8,11 +8,11 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BulkyBookWeb
 build_property.RootNamespace = BulkyBookWeb
-build_property.ProjectDir = C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\
+build_property.ProjectDir = C:\Users\abdallah\source\repos\BulkyBookWeb\BulkyBookWeb\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb
+build_property.MSBuildProjectDirectory = C:\Users\abdallah\source\repos\BulkyBookWeb\BulkyBookWeb
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/abdallah/Source/Repos/BulkyBookWeb/BulkyBookWeb/Views/Category/Create.cshtml]
@@ -29,6 +29,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/abdallah/Source/Repos/BulkyBookWeb/BulkyBookWeb/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdallah/Source/Repos/BulkyBookWeb/BulkyBookWeb/Views/CoverType/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ292ZXJUeXBlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdallah/Source/Repos/BulkyBookWeb/BulkyBookWeb/Views/CoverType/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ292ZXJUeXBlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdallah/Source/Repos/BulkyBookWeb/BulkyBookWeb/Views/CoverType/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ292ZXJUeXBlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdallah/Source/Repos/BulkyBookWeb/BulkyBookWeb/Views/CoverType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ292ZXJUeXBlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/abdallah/Source/Repos/BulkyBookWeb/BulkyBookWeb/Views/Home/Index.cshtml]
