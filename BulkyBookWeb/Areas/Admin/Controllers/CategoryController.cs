@@ -4,8 +4,9 @@ using BulkyBook.DataAccess.Repository.iRepository;
 using BulkyBook.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BulkyBookWeb.Controllers
-{
+namespace BulkyBookWeb.Controllers;
+    [Area("Admin")]
+
     public class CategoryController : Controller
     {
         private IUnitOfWork _unitOfWork;
@@ -105,4 +106,4 @@ namespace BulkyBookWeb.Controllers
             
         }
     }
-}
+
