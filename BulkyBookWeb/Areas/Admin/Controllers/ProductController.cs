@@ -12,8 +12,11 @@ namespace BulkyBookWeb.Controllers;
     public class ProductController : Controller
     {
         private IUnitOfWork _unitOfWork;
-        public ProductController(IUnitOfWork unitOfWork)
-        { _unitOfWork = unitOfWork; }
+    private IWebHostEnvironment _hostEnviroment;
+        public ProductController(IUnitOfWork unitOfWork,IWebHostEnvironment hostEnvironment)
+        { _unitOfWork = unitOfWork;
+        _hostEnviroment = hostEnvironment;
+    }
         public IActionResult Index()
         {
             IEnumerable<Product> objCategoryList= _unitOfWork.product.GetAll();
@@ -55,15 +58,26 @@ namespace BulkyBookWeb.Controllers;
         //post
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Upsert(ProductVM obj,IFormFile file)
+        public IActionResult Upsert(ProductVM obj,IFormFile? file)
         {
             
             
             if (ModelState.IsValid)
             {
-                //_unitOfWork.product.update(obj);
+            string wwwRootPath = _hostEnviroment.WebRootPath;
+            if(file!=null)
+            { string fileName=Guid.NewGuid().ToString();
+                var uploads=Path.Combine(wwwRootPath,@"images\products");
+                var extension=Path.GetExtension(file.Name);
+
+                using (var fileStreams = new FileStream(Path.Combine(uploads, fileName + extension),FileMode.Create))
+                { file.CopyTo(fileStreams); 
+                }
+                obj.product.ImageUrl = @"\images\products" + fileName + extension;
+            }
+                _unitOfWork.product.Add(obj.product);
                 _unitOfWork.Save();
-                TempData["success"] = "product update successfully";
+                TempData["success"] = "product Created successfully";
 
                 return RedirectToAction("Index");
             }
