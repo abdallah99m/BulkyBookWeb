@@ -2,9 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\BulkyBookWeb",
+    "\\BulkyBookWeb\\Areas",
+    "\\BulkyBookWeb\\Areas\\Admin",
+    "\\BulkyBookWeb\\Areas\\Admin\\Views",
+    "\\BulkyBookWeb\\Areas\\Admin\\Views\\CoverType",
     "\\BulkyBookWeb\\wwwroot",
     "\\BulkyBookWeb\\wwwroot\\css"
   ],
-  "SelectedNode": "\\BulkyBookWeb\\wwwroot\\css\\bootswatchTheme.css",
+  "SelectedNode": "\\BulkyBookWeb.sln",
   "PreviewInSolutionExplorer": false
 }

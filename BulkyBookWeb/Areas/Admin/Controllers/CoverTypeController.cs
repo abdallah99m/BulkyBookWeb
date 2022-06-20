@@ -4,8 +4,9 @@ using BulkyBook.DataAccess.Repository.iRepository;
 using BulkyBook.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BulkyBookWeb.Controllers
-{
+namespace BulkyBookWeb.Controllers;
+    [Area("Admin")]
+
     public class CoverTypeController : Controller
     {
         private IUnitOfWork _unitOfWork;
@@ -30,7 +31,7 @@ namespace BulkyBookWeb.Controllers
             {
                 _unitOfWork.coverType.Add(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "Cover Type created successfully";
+                TempData["success"] = "cover type created successfully";
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -43,17 +44,18 @@ namespace BulkyBookWeb.Controllers
                 return NotFound();
             }
             //var categoryFromDb = _db.categories.Find(id);
-            var coverType = _unitOfWork.coverType.GetFirstOrDefault(c => c.Id == id);
-            if(coverType == null)
+            var CoverType = _unitOfWork.coverType.GetFirstOrDefault(c => c.Id == id);
+            if(CoverType == null)
             { return NotFound(); }
             
-            return View(coverType);
+            return View(CoverType);
         }
         //post
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(CoverType obj)
         {
+            
             
             if (ModelState.IsValid)
             {
@@ -72,17 +74,18 @@ namespace BulkyBookWeb.Controllers
             {
                 return NotFound();
             }
-            var covertypeFromDb = _unitOfWork.coverType.GetFirstOrDefault(c => c.Id == id);
-            if (covertypeFromDb == null)
+            var CoverTypeFromDb = _unitOfWork.coverType.GetFirstOrDefault(c => c.Id == id);
+            if (CoverTypeFromDb == null)
             { return NotFound(); }
 
-            return View(covertypeFromDb);
+            return View(CoverTypeFromDb);
         }
         //post
         [HttpPost,ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public IActionResult DeletePost(int ?id)
-        {var obj = _unitOfWork.coverType.GetFirstOrDefault(c => c.Id == id);
+        {
+            var obj = _unitOfWork.coverType.GetFirstOrDefault(c => c.Id == id);
             if (obj == null)
             { return NotFound();
             }
@@ -97,4 +100,4 @@ namespace BulkyBookWeb.Controllers
             
         }
     }
-}
+

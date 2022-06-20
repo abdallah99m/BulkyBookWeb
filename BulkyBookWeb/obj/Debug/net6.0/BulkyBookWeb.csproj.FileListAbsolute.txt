@@ -561,3 +561,10 @@ C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\BulkyB
 C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.Models.dll
 C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.DataAccess.pdb
 C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.Models.pdb
+C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\System.Web.Mvc.dll
+C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\System.Web.WebPages.dll
+C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
