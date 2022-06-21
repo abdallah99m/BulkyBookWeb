@@ -69,7 +69,7 @@ namespace BulkyBookWeb.Controllers;
             if(file!=null)
             { string fileName=Guid.NewGuid().ToString();
                 var uploads=Path.Combine(wwwRootPath,@"images\products\");
-                var extension=Path.GetExtension(file.Name);
+                var extension=Path.GetExtension(file.FileName);
 
 
                 if(obj.product.ImageUrl!=null)
