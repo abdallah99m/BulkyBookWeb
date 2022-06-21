@@ -2,13 +2,19 @@
 
 
 <form method="post" asp-action="Upsert" enctype="multipart/form-data">
+    <input asp-for="product.Id" hidden />
+    <input asp-for="product.ImageUrl" hidden />
+    <div class="row">
+        <div class="col-10">
+            
     <div class="border p-3 mt-4 row">
-        <div class="row pb-2">
+        <div class="col-12 pb-2">
             <h2 class="text-primary">@(Model.product.Id!=0?"Update":"Create")   Product</h2>
             <hr/>
         </div>
-@*        <div asp-validation-summary="All"></div>
-*@        <div class="mb-3">
+      @*        <div asp-validation-summary="All"></div>
+    *@       
+  <div class="mb-3">
             <label asp-for="product.Tittle"></label>
             <input asp-for="product.Tittle" class="form-control" />
             <span asp-validation-for="product.Tittle" class="text-danger"></span>
@@ -77,17 +83,35 @@
             else
             {        <button type="submit" onclick="return ValidateInput()" class="btn btn-primary" style="width:150px">Create </button>
 }
-            <a asp-area="Admin" asp-controller="CoverType" asp-action="Index" class="btn btn-secondary" style="width:150px ">
+            <a asp-area="Admin" asp-controller="Product" asp-action="Index" class="btn btn-secondary" style="width:150px ">
             Back to list
         </a>
         </div>
     </div>
+        </div>
+        <div class="col-2 pt-4">
+            <img src="@Model.product.ImageUrl"
+            width="100%" style="border-radius:5px;border:1px solid #bbb9b9"/>
+        </div>
+    </div>
+
+
 </form>
 @section scripts{
     @{
         <partial name="_ValidationScriptsPartial"></partial>
     }
     <script>
+         
+    tinymce.init({
+      selector: 'textarea',
+      plugins: 'a11ychecker advcode casechange export formatpainter image editimage linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tableofcontents tinycomments tinymcespellchecker',
+      toolbar_mode: 'floating',
+      
+    });
+ 
+
+
     function ValidateInput(){
         if(document.getElementById("uploadBox").value=="")
         {

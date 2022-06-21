@@ -6,6 +6,8 @@
     "\\BulkyBookWeb\\Areas\\Admin",
     "\\BulkyBookWeb\\Areas\\Admin\\Views",
     "\\BulkyBookWeb\\Areas\\Admin\\Views\\CoverType",
+    "\\BulkyBookWeb\\Views",
+    "\\BulkyBookWeb\\Views\\Shared",
     "\\BulkyBookWeb\\wwwroot",
     "\\BulkyBookWeb\\wwwroot\\css"
   ],
