@@ -2,8 +2,14 @@ using BulkyBook.DataAccess;
 using BulkyBook.DataAccess.Repository;
 using BulkyBook.DataAccess.Repository.iRepository;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<ApplicationDbContext>();;
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -26,6 +32,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseAuthentication();;
 
 app.UseAuthorization();
 

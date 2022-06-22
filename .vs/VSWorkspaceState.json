@@ -1,6 +1,7 @@
 {
   "ExpandedNodes": [
     "",
+    "\\BulkyBook.Models",
     "\\BulkyBookWeb",
     "\\BulkyBookWeb\\Areas",
     "\\BulkyBookWeb\\Areas\\Admin",
