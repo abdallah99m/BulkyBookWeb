@@ -16,10 +16,12 @@ private readonly ApplicationDbContext _db;
             category = new CategoryRepository(_db);
             coverType = new CoverTypeRepository(_db);
             product = new ProductRepository(_db);
+            company = new CompanyRepository(_db);
         }
         public ICategoryRepository category { get;private set; }
         public ICoverTypeRepository coverType { get; private set; }
         public IProductRepository product { get; private  set; }
+        public ICompanyRepository company { get; private set; }
 
 
         public void Save()
