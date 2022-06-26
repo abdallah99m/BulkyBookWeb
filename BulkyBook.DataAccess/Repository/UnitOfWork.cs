@@ -17,11 +17,17 @@ private readonly ApplicationDbContext _db;
             coverType = new CoverTypeRepository(_db);
             product = new ProductRepository(_db);
             company = new CompanyRepository(_db);
+            shoppingCart = new ShoppingCartRepository(_db);
+            applicationUser = new ApplicationUserRepository(_db);
         }
         public ICategoryRepository category { get;private set; }
         public ICoverTypeRepository coverType { get; private set; }
         public IProductRepository product { get; private  set; }
         public ICompanyRepository company { get; private set; }
+        public IShoppingCartRepository shoppingCart { get; private set; }
+
+        public IApplicationUserRepository applicationUser { get; private set; }
+
 
 
         public void Save()
