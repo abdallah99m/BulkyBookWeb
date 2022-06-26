@@ -19,6 +19,8 @@ private readonly ApplicationDbContext _db;
             company = new CompanyRepository(_db);
             shoppingCart = new ShoppingCartRepository(_db);
             applicationUser = new ApplicationUserRepository(_db);
+            orderDeatil=new OrderDetailsRepository(_db);
+            orderHeader = new OrderHeaderRepository(_db);
         }
         public ICategoryRepository category { get;private set; }
         public ICoverTypeRepository coverType { get; private set; }
@@ -27,8 +29,10 @@ private readonly ApplicationDbContext _db;
         public IShoppingCartRepository shoppingCart { get; private set; }
 
         public IApplicationUserRepository applicationUser { get; private set; }
+        
 
-
+        public IOrderHeaderRepository orderHeader { get; private set; }
+        public IOrderDeatilRepository orderDeatil { get; private set; }
 
         public void Save()
         {

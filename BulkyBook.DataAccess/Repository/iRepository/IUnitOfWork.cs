@@ -13,6 +13,9 @@ namespace BulkyBook.DataAccess.Repository.iRepository
         IProductRepository product { get; }
         ICompanyRepository company { get; }
         IShoppingCartRepository shoppingCart { get; }
+        IOrderHeaderRepository orderHeader { get; }
+        IOrderDeatilRepository orderDeatil { get; }
+
 
         IApplicationUserRepository applicationUser { get; }
 
