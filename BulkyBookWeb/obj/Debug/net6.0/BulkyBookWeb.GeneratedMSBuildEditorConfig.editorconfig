@@ -8,11 +8,11 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BulkyBookWeb
 build_property.RootNamespace = BulkyBookWeb
-build_property.ProjectDir = C:\Users\abdallah\source\repos\BulkyBookWeb\BulkyBookWeb\
+build_property.ProjectDir = C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\abdallah\source\repos\BulkyBookWeb\BulkyBookWeb
+build_property.MSBuildProjectDirectory = C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/abdallah/Source/Repos/BulkyBookWeb/BulkyBookWeb/Areas/Admin/Views/Category/Create.cshtml]
@@ -53,6 +53,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/abdallah/Source/Repos/BulkyBookWeb/BulkyBookWeb/Areas/Admin/Views/CoverType/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ292ZXJUeXBlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdallah/Source/Repos/BulkyBookWeb/BulkyBookWeb/Areas/Admin/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/abdallah/Source/Repos/BulkyBookWeb/BulkyBookWeb/Areas/Admin/Views/Product/Index.cshtml]
