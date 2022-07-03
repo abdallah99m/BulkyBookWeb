@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\BulkyBook.Utility",
     "\\BulkyBookWeb",
     "\\BulkyBookWeb\\Areas",
-    "\\BulkyBookWeb\\Areas\\Customer",
-    "\\BulkyBookWeb\\Areas\\Customer\\Views",
-    "\\BulkyBookWeb\\Areas\\Customer\\Views\\Home",
-    "\\BulkyBookWeb\\Views",
-    "\\BulkyBookWeb\\Views\\Shared",
+    "\\BulkyBookWeb\\Areas\\Admin",
+    "\\BulkyBookWeb\\Areas\\Admin\\Controllers",
+    "\\BulkyBookWeb\\Areas\\Admin\\Views",
+    "\\BulkyBookWeb\\Areas\\Admin\\Views\\Order",
     "\\BulkyBookWeb\\wwwroot",
-    "\\BulkyBookWeb\\wwwroot\\css"
+    "\\BulkyBookWeb\\wwwroot\\js"
   ],
-  "SelectedNode": "\\BulkyBookWeb.sln",
+  "SelectedNode": "\\BulkyBookWeb\\Areas\\Admin\\Views\\Order\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
