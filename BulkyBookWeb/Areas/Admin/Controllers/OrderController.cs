@@ -228,7 +228,7 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
             switch (status)
             {
                 case "pending":
-                    orderHeaders = orderHeaders.Where(u => u.PaymentStatus == SD.PaymentStatusDelayedPayment);
+                    orderHeaders = orderHeaders.Where(u => u.PaymentStatus == SD.StatusPending);
                     break;
                 case "inprocess":
                     orderHeaders = orderHeaders.Where(u => u.OrderStatus == SD.StatusInProcess);

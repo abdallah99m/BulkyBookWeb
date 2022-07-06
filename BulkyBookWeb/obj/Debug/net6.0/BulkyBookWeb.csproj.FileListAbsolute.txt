@@ -573,3 +573,6 @@ C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\Micros
 C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.Utility.dll
 C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.Utility.pdb
 C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\Stripe.net.dll
+C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\MailKit.dll
+C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\MimeKit.dll
+C:\Users\abdallah\Source\Repos\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\BouncyCastle.Crypto.dll
