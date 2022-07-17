@@ -1,11 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BulkyBook.Utility",
+    "\\BulkyBook.DataAccess",
+    "\\BulkyBook.DataAccess\\Repository",
     "\\BulkyBookWeb",
     "\\BulkyBookWeb\\Areas",
     "\\BulkyBookWeb\\Areas\\Admin",
-    "\\BulkyBookWeb\\Areas\\Admin\\Controllers",
     "\\BulkyBookWeb\\Areas\\Admin\\Views",
     "\\BulkyBookWeb\\Areas\\Admin\\Views\\Order",
     "\\BulkyBookWeb\\wwwroot",
