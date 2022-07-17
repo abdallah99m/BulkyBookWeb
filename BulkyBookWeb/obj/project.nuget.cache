@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wOaczSx7PbiO7alqjHRm/8Lqu7/WbSirayTM6Q3ellePZwsWbKJJqhtjB9Ro5eWgFsGctNUq1LuJL/U3YDEl1g==",
+  "dgSpecHash": "XKdMmcVTvRQYRPpQ8Wn393359J188EjQlEJhTrtF+RGUA5dqzj36ftYI8AxyRYtO0MuVL4eZ4zMC4WYzDO29yA==",
   "success": true,
   "projectFilePath": "C:\\Users\\abdallah\\Source\\Repos\\BulkyBookWeb\\BulkyBookWeb\\BulkyBookWeb.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\abdallah\\.nuget\\packages\\microsoft.aspnet.mvc\\5.2.9\\microsoft.aspnet.mvc.5.2.9.nupkg.sha512",
     "C:\\Users\\abdallah\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.9\\microsoft.aspnet.razor.3.2.9.nupkg.sha512",
     "C:\\Users\\abdallah\\.nuget\\packages\\microsoft.aspnet.webpages\\3.2.9\\microsoft.aspnet.webpages.3.2.9.nupkg.sha512",
+    "C:\\Users\\abdallah\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\6.0.7\\microsoft.aspnetcore.authentication.facebook.6.0.7.nupkg.sha512",
     "C:\\Users\\abdallah\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.6\\microsoft.aspnetcore.cryptography.internal.6.0.6.nupkg.sha512",
     "C:\\Users\\abdallah\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.6\\microsoft.aspnetcore.cryptography.keyderivation.6.0.6.nupkg.sha512",
     "C:\\Users\\abdallah\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.6\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.6.nupkg.sha512",
